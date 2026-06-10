@@ -1,0 +1,108 @@
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 1.25rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 6rem 0 3rem;
+    min-height: auto;
+  }
+
+  .hero-left {
+    padding: 0 1.5rem 2.5rem;
+  }
+
+  .hero-right {
+    padding: 0 1.5rem;
+    animation: none;
+    opacity: 1;
+  }
+
+  .hero-sub {
+    max-width: none;
+  }
+
+  .desire-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .before-after {
+    grid-template-columns: 1fr;
+  }
+
+  .ba-divider {
+    display: none;
+  }
+
+  .ba-col-after {
+    margin-top: 1rem;
+  }
+
+  .steps-row {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    border-right: none;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .how-section,
+  .desire-inner {
+    padding: 4rem 1.25rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .footer-desc { max-width: none; }
+
+  .footer-links {
+    flex-direction: column; gap: var(--space-lg);
+  }
+
+  .footer-bot {
+    flex-direction: column; gap: var(--space-xs);
+    text-align: center;
+  }
+
+  /* Consumer landing */
+  .landing-hero-content {
+    padding: 7.5rem 1.25rem 4rem;
+  }
+  .landing-hero-actions {
+    flex-direction: column; align-items: flex-start;
+  }
+  .cat-grid { grid-template-columns: 1fr; }
+  .categories-inner,
+  .how-section { padding: 4rem 1.25rem; }
+  .register-inner {
+    grid-template-columns: 1fr; gap: 2.5rem;
+    padding: 4rem 1.25rem;
+  }
+  .register-left .section-label::after { background: rgba(232,234,202,0.2); }
+
+  /* Blog / Article */
+  .blog-header { padding: 7rem 1.25rem 3.5rem; }
+  .blog-index { padding: 3rem 1.25rem; }
+  .articles-grid { grid-template-columns: 1fr; }
+  .article-hero { padding: 7rem 1.25rem 3rem; }
+  .article-body { padding: 2.5rem 1.25rem 2rem; }
+  .data-block { grid-template-columns: 1fr 1fr; }
+  .data-item:nth-child(2) { border-right: none; }
+  .data-item:nth-child(3) { border-top: 1px solid rgba(41,54,109,0.35); border-right: none; grid-column: 1/-1; }
+  .article-cta-primary,
+  .article-cta-secondary { flex-direction: column; }
+  .more-grid { grid-template-columns: 1fr; }
+  .more-card { border-right: none; border-bottom: 1px solid rgba(41,54,109,0.35); }
+  .more-card:last-child { border-bottom: none; }
+  .back-nav { padding: 0 1.25rem 1rem; }
+  .blog-seo-grid { grid-template-columns: 1fr; }
+}

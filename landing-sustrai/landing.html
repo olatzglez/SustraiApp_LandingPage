@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anunciar tu restaurante en el País Vasco | SustraiApp</title>
+<meta name="description" content="Consigue visibilidad online para tu restaurante o comercio local en Bilbao y Euskadi. Llega a clientes que ya buscan lo que tú ofreces. Sin competir con cadenas.">
+<meta name="keywords" content="anunciar restaurante País Vasco, visibilidad online restaurantes, cómo conseguir clientes restaurante Bilbao, visibilidad comercio local, publicar tu negocio guía gastronómica">
+<link rel="stylesheet" href="css/design-tokens.css">
+<link rel="stylesheet" href="css/typography.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Saltar al contenido</a>
+
+<!-- NAV -->
+<nav>
+  <img src="logo.svg" alt="SustraiApp" class="nav-logo">
+  <a href="#formulario" class="nav-cta">Solicitar plaza</a>
+</nav>
+
+<!-- ═══ HERO: H1 + sub izquierda · Formulario derecha ═══ -->
+<span id="main-content"></span>
+<section class="hero" id="formulario" aria-label="Presentación y formulario">
+  <div class="hero-accent-line"></div>
+
+  <!-- Izquierda -->
+  <div class="hero-left">
+    <p class="hero-eyebrow">Para restaurantes y comercios locales de calidad en Euskadi</p>
+    <h1 class="hero-h1">
+      Tu cliente ideal<br>ya busca lo<br>
+      <em>que tú ofreces.</em>
+    </h1>
+    <p class="hero-sub">
+      SustraiApp es la guía gastronómica de calidad del País Vasco para residentes locales de clase media-alta. <strong>Consigue visibilidad online para tu restaurante en Bilbao</strong> ante el público que ya busca tu nivel, sin competir con cadenas ni pagar por publicidad que no llega a quien debe.
+    </p>
+  </div>
+
+  <!-- Derecha: formulario -->
+  <div class="hero-right">
+    <div class="form-card">
+      <p class="form-card-title">Solicita tu evaluación</p>
+      <p class="form-card-sub">Menos de 3 minutos · Sin compromiso · Respuesta en 48h</p>
+      <div id="form-fields">
+        <div class="field-row">
+          <div class="field">
+            <label for="nombre">Nombre del negocio</label>
+            <input type="text" id="nombre" placeholder="Tu restaurante o tienda" required>
+          </div>
+          <div class="field">
+            <label for="contacto">Persona de contacto</label>
+            <input type="text" id="contacto" placeholder="Nombre y apellido">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="tu@negocio.com" required>
+          </div>
+          <div class="field">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="+34 600 000 000">
+          </div>
+        </div>
+        <div class="field">
+          <label for="tipo">Tipo de negocio</label>
+          <select id="tipo">
+            <option value="">Selecciona una opción</option>
+            <option>Restaurante — cocina vasca tradicional</option>
+            <option>Restaurante — cocina de mercado / temporada</option>
+            <option>Bar de pintxos de calidad</option>
+            <option>Asador</option>
+            <option>Restaurante — cocina creativa / fusión</option>
+            <option>Tienda de productos gastronómicos locales</option>
+            <option>Espacio cultural / evento</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ticket">Ticket medio por persona</label>
+          <select id="ticket">
+            <option value="">Selecciona un rango</option>
+            <option>30 – 45 €</option>
+            <option>45 – 65 €</option>
+            <option>65 – 90 €</option>
+            <option>Más de 90 €</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">¿Qué buscas conseguir? (opcional)</label>
+          <textarea id="mensaje" placeholder="Cuéntanos tu situación actual y qué te gustaría cambiar..."></textarea>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="legal">
+          <label for="legal">Acepto que SustraiApp contacte conmigo para evaluar mi solicitud. Sin compromiso. Mis datos no serán cedidos a terceros.</label>
+        </div>
+        <button class="btn-form" onclick="submitForm()">Solicitar evaluación gratuita</button>
+        <p class="form-legal">Respondemos en menos de 48h · Proceso 100% gratuito · Sin permanencia</p>
+      </div>
+      <div class="form-success" id="form-success">
+        <div class="form-success-icon">✓</div>
+        <h3>Solicitud recibida</h3>
+        <p>Revisaremos tu negocio y nos pondremos en contacto en menos de 48 horas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DESIRE — antes/después ═══ -->
+<section class="desire-section" aria-labelledby="desire-title">
+  <div class="desire-inner">
+    <p class="section-label">La diferencia</p>
+    <div class="desire-header">
+      <h2 id="desire-title">Antes y después<br>de <em>SustraiApp</em></h2>
+      <p>Tu negocio, cruzado automáticamente con los gustos de los usuarios que encajan contigo. Sin que tengas que gestionar nada.</p>
+    </div>
+    <div class="before-after reveal">
+      <div class="ba-col-before">
+        <div class="ba-header">Sin SustraiApp</div>
+        <div class="ba-item">Apareces entre cientos de opciones sin filtro de calidad</div>
+        <div class="ba-item">Compites con el McDonald's del barrio por el mismo espacio</div>
+        <div class="ba-item">Descuentos que dañan tu imagen de producto premium</div>
+        <div class="ba-item">Pagas por impresiones que no llegan a tu cliente ideal</div>
+        <div class="ba-item">Gestionas tú mismo la presencia digital sin tiempo</div>
+      </div>
+      <div class="ba-divider">→</div>
+      <div class="ba-col-after">
+        <div class="ba-header">Con SustraiApp</div>
+        <div class="ba-item">Solo apareces ante usuarios que ya buscan tu tipo de propuesta</div>
+        <div class="ba-item">Tu categoría es exclusiva para negocios con criterio de calidad</div>
+        <div class="ba-item">Tu precio y tu propuesta, sin rebajas ni distorsión de imagen</div>
+        <div class="ba-item">Visibilidad cualificada: el algoritmo cruza tu perfil con el usuario</div>
+        <div class="ba-item">Das de alta tu negocio una vez. SustraiApp hace el resto</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESO + CTA ═══ -->
+<section class="how-section" id="como-funciona" aria-labelledby="how-title">
+  <p class="section-label">Proceso</p>
+  <h2 class="how-h2" id="how-title">Así <em>publicamos tu negocio</em><br>en la guía gastronómica</h2>
+  <p class="how-sub">Sin gestión técnica por tu parte. Sin curvas de aprendizaje. Solo tu negocio, ante el público correcto.</p>
+  <div class="steps-row reveal">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h3>Solicitas tu plaza</h3>
+      <p>Rellenas el formulario en menos de 3 minutos. Nos cuentas qué tipo de cocina haces, tu ticket medio y qué buscas conseguir. Sin compromiso.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h3>Evaluamos tu negocio</h3>
+      <p>En menos de 48 horas revisamos tu propuesta. Solo seleccionamos establecimientos que encajan con el estándar de calidad que busca nuestro público. Totalmente gratuito.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h3>Apareces ante quien te busca</h3>
+      <p>El sistema cruza tu perfil con los gustos de los usuarios registrados. Solo apareces en la pantalla de quienes ya tienen el interés y el nivel para ser tus clientes.</p>
+    </div>
+  </div>
+  <div class="how-cta-wrap reveal">
+    <a href="#formulario" class="btn-cta">Solicitar evaluación gratuita</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="logo.svg" alt="SustraiApp" class="footer-logo">
+      <p class="footer-desc">Guía gastronómica y de ocio de calidad del País Vasco. Conectamos negocios locales con clientes que valoran la excelencia.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#formulario">Solicitar plaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="mailto:hola@sustraiapp.eus">hola@sustraiapp.eus</a>
+        <a href="#">Bilbao, Euskadi</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <p>&copy; 2026 SustraiApp — Todos los derechos reservados</p>
+    <a href="#">Aviso legal</a>
+  </div>
+</footer>
+
+<script src="js/landing.js"></script>
+</body>
+</html>

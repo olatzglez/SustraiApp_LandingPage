@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- ═══ SEO META — BLOG INDEX ═══ -->
+<title>Blog Gastronómico Bilbao | Guía de Ocio País Vasco | SustraiApp</title>
+<meta name="description" content="Descubre lo mejor de la gastronomía y el ocio en Euskadi: restaurantes con encanto, tiendas delicatessen, planes de fin de semana en el País Vasco. Curación editorial para residentes locales.">
+<meta name="keywords" content="guía gastronómica país vasco, restaurantes con encanto, planes de fin de semana país vasco, agenda gastronómica, tiendas delicatessen, donde comer bien Bilbao, mejores restaurantes Casco Viejo, pintxos de calidad">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sustraiapp.com/blog/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog Editorial | SustraiApp — Gastronomía y Ocio de Calidad en Euskadi">
+<meta property="og:description" content="Selección editorial de lo que merece la pena en el País Vasco. Restaurantes de producto local, espacios culturales y planes de fin de semana para quien sabe elegir.">
+<meta property="og:url" content="https://sustraiapp.com/blog/">
+<meta property="og:site_name" content="SustraiApp">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog Editorial | SustraiApp">
+<meta name="twitter:description" content="Gastronomía y ocio de calidad en Euskadi. Para residentes del País Vasco con criterio.">
+
+<!-- Schema.org — Blog -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "SustraiApp — Blog Editorial",
+  "description": "Guía editorial de gastronomía y ocio de calidad en el País Vasco para residentes locales.",
+  "url": "https://sustraiapp.com/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "SustraiApp",
+    "url": "https://sustraiapp.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sustraiapp.com/logo.svg"
+    }
+  },
+  "inLanguage": "es",
+  "about": {
+    "@type": "Thing",
+    "name": "Gastronomía vasca"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="css/design-tokens.css">
+<link rel="stylesheet" href="css/typography.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Saltar al contenido</a>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <img src="logo.svg" alt="SustraiApp" class="nav-logo">
+  <a href="landing.html" class="nav-cta">Para negocios</a>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════
+     VISTA: ÍNDICE DEL BLOG
+════════════════════════════════════════════════════ -->
+<div id="view-index">
+
+  <!-- Blog header -->
+  <header class="blog-header">
+    <div class="blog-header-glow"></div>
+    <div class="blog-header-inner">
+      <p class="blog-eyebrow">Selección editorial · País Vasco</p>
+      <h1>Lo que merece<br>la <em>pena saber.</em></h1>
+      <p>Aperturas, experiencias y espacios gastronómicos seleccionados con criterio. Para residentes de Euskadi que prefieren acertar.</p>
+    </div>
+  </header>
+
+  <!-- Articles index -->
+  <main class="blog-index" id="main-content">
+    <p class="section-label">Últimas entregas</p>
+    <div class="articles-grid reveal">
+
+      <!-- Card 1: Txakoli Museoa -->
+      <a class="article-card" href="#" onclick="openArticle('txakoli'); return false;">
+        <span class="article-card-tag sponsored">Cultura gastronómica</span>
+        <h2>Txakolin Museoa:<br>el vino vasco<br><em>con todos los sentidos</em></h2>
+        <p>Un centro de interpretación único en Bizkaia que convierte la tradición txakolinera en una experiencia sensorial. Más que un museo: una cita obligada para quien quiere entender Euskadi desde la raíz.</p>
+        <div class="article-meta">
+          <span>Planes de fin de semana País Vasco</span>
+          <span>·</span>
+          <span>8 min de lectura</span>
+        </div>
+        <span class="article-card-read">Leer artículo →</span>
+      </a>
+
+      <!-- Card 2: Katu Txiki -->
+      <a class="article-card" href="#" onclick="openArticle('katutxiki'); return false;">
+        <span class="article-card-tag sponsored">Restaurante · Bar de pintxos</span>
+        <h2>Katu Txiki:<br>alta cocina de barrio<br><em>en la calle San Francisco</em></h2>
+        <p>Pintxos elaborados al momento por dos cocineros formados en la alta cocina que decidieron volver a lo esencial. Croquetas, carrilleras, steak tartar y una oreja de cerdo con miel que lo dice todo.</p>
+        <div class="article-meta">
+          <span>Pintxos de calidad · Bilbao</span>
+          <span>·</span>
+          <span>7 min de lectura</span>
+        </div>
+        <span class="article-card-read">Leer artículo →</span>
+      </a>
+
+    </div>
+
+    <!-- SEO text block -->
+    <div class="blog-seo-block">
+      <p class="section-label">La guía</p>
+      <div class="blog-seo-grid reveal">
+        <div>
+          <p class="blog-seo-text">
+            SustraiApp es la <strong class="blog-seo-strong">guía gastronómica del País Vasco</strong> pensada para residentes locales con criterio. Nuestro blog editorial publica contenido sobre <strong class="blog-seo-strong">restaurantes con encanto</strong>, experiencias culturales y <strong class="blog-seo-strong">planes de fin de semana en Euskadi</strong> que merece la pena conocer.
+          </p>
+          <p class="blog-seo-text">
+            No publicamos noticias. Publicamos lo que conviene saber antes de salir de casa: una apertura que merece atención, un espacio cultural que aún no está masificado, un producto local que necesita llegar a quien lo aprecia.
+          </p>
+        </div>
+        <div>
+          <p class="blog-seo-text">
+            Cada artículo está seleccionado y escrito con el mismo criterio con el que seleccionamos los establecimientos de la plataforma. Si aparece aquí, es porque lo hemos visitado, verificado y considerado que <strong class="blog-seo-strong">tu tiempo merece la pena.</strong>
+          </p>
+          <p class="blog-seo-text">
+            Los artículos marcados como contenido patrocinado cumplen los mismos estándares editoriales. La diferencia es que el negocio ha elegido contarnos su historia. La opinión, siempre, es nuestra.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div><!-- /view-index -->
+
+
+<!-- ═══════════════════════════════════════════════════
+     ARTÍCULO 1: TXAKOLIN MUSEOA
+════════════════════════════════════════════════════ -->
+<div id="view-txakoli" class="article-wrap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Txakolin Museoa: el vino vasco contado con todos los sentidos",
+  "description": "Un centro de interpretación único en Bizkaia para entender la historia y el proceso de elaboración del txakoli, el vino vasco por excelencia. Visita guiada, maridaje con pintxos y una experiencia sensorial completa.",
+  "keywords": "txakoli, museo del txakoli, guía gastronómica país vasco, planes de fin de semana país vasco, agenda gastronómica, tiendas delicatessen, Bizkaiko Txakolina",
+  "datePublished": "2026-05-30",
+  "dateModified": "2026-05-30",
+  "author": {
+    "@type": "Organization",
+    "name": "SustraiApp",
+    "url": "https://sustraiapp.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SustraiApp",
+    "logo": { "@type": "ImageObject", "url": "https://sustraiapp.com/logo.svg" }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sustraiapp.com/blog/txakolin-museoa-visita-guiada"
+  },
+  "about": {
+    "@type": "TouristAttraction",
+    "name": "Txakolin Museoa — Txakolingunea",
+    "description": "Centro de interpretación de la tradición txakolinera de Bizkaia",
+    "url": "https://euskadigastronomika.eus/es/museo-del-txakoli-txakolingunea",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Bizkaia",
+      "addressCountry": "ES"
+    }
+  },
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "SustraiApp Blog",
+    "url": "https://sustraiapp.com/blog/"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".article-intro-accent", ".pull-quote"]
+  }
+}
+</script>
+
+  <article>
+
+    <header class="article-hero">
+      <div class="article-hero-glow"></div>
+      <div class="article-hero-inner">
+        <p class="article-category">Cultura gastronómica · Planes de fin de semana País Vasco</p>
+        <h1>Txakolin Museoa:<br>el vino vasco contado<br>con <em>todos los sentidos</em></h1>
+        <p class="article-hero-sub">Un centro de interpretación único en Bizkaia que convierte la tradición del txakoli en una experiencia sensorial completa. Visita guiada, maridaje con pintxos y la historia de un vino que lleva siglos siendo nuestra identidad.</p>
+        <div class="article-byline">
+          <span>SustraiApp Editorial</span>
+          <span class="byline-sep"></span>
+          <span>30 de mayo, 2026</span>
+          <span class="byline-sep"></span>
+          <span>8 min de lectura</span>
+          <span class="byline-sep"></span>
+          <span class="sponsored-badge">Contenido patrocinado</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="back-nav back-nav--top">
+      <button class="back-btn" onclick="closeArticle()">← Volver al blog</button>
+    </div>
+
+    <div class="article-body">
+
+      <p class="article-intro-accent">
+        Hay sitios que no necesitan que nadie te los recomiende dos veces. Txakolin Museoa es uno de ellos. Un espacio donde el txakoli —ese vino ácido, fresco, tan nuestro— deja de ser un acompañante de pintxos para convertirse en el protagonista absoluto de una tarde.
+      </p>
+
+      <p>
+        Si llevas tiempo buscando <strong>planes de fin de semana en el País Vasco</strong> que vayan más allá de lo habitual, este es uno. No estamos hablando de una sala con paneles y vitrinas. Estamos hablando de un <a href="https://euskadigastronomika.eus/es/museo-del-txakoli-txakolingunea" target="_blank" rel="noopener">centro de interpretación</a> diseñado para entender el txakoli desde dentro: su historia, su proceso de elaboración y, sobre todo, su carácter propio como parte de la identidad de Bizkaia.
+      </p>
+
+      <h2>Bizkaiko Txakolina: nuestra identidad, tu disfrute</h2>
+
+      <p>
+        El txakoli no es simplemente un vino blanco. Es un vino con denominación de origen propia —<strong>Bizkaiko Txakolina</strong>— que lleva siglos ligado al caserío vasco, a los caseríos de las laderas costeras y a la manera en que los vascos entendemos la mesa. Es ácido, efervescente, con una acidez que corta y limpia. No se parece a ningún otro vino. Y eso no es un defecto: es exactamente su valor.
+      </p>
+
+      <div class="data-block">
+        <div class="data-item">
+          <span class="data-num">3</span>
+          <div class="data-desc">D.O. de txakoli en Euskadi: Bizkaiko, Getariako y Arabako</div>
+        </div>
+        <div class="data-item">
+          <span class="data-num">5</span>
+          <div class="data-desc">Sentidos activados durante la visita guiada con interactivos</div>
+        </div>
+        <div class="data-item">
+          <span class="data-num">2h</span>
+          <div class="data-desc">Duración estimada de la experiencia completa con maridaje</div>
+        </div>
+      </div>
+
+      <h2>La visita: más que un recorrido</h2>
+
+      <p>
+        La propuesta de Txakolin Museoa —Txakolingunea— se articula en torno a recursos audiovisuales e interactivos que hacen accesible la historia del vino vasco sin restar profundidad. Puedes seguir el proceso de elaboración paso a paso, entender qué hace diferente al txakoli de Bizkaia respecto al de Getaria o Álava, y descubrir por qué este vino lleva décadas recuperando presencia en mesas de todo el mundo.
+      </p>
+
+      <div class="pull-quote">
+        <p>"Un espacio donde el txakoli deja de ser un acompañante para convertirse en el protagonista absoluto de una tarde."</p>
+      </div>
+
+      <p>
+        El punto culminante de la visita es el maridaje. Degustar diferentes tipos de txakoli acompañados de <strong>pintxos típicos de la tierra</strong> —la gilda y el queso Idiazabal como referencia— no es un extra. Es el núcleo de la experiencia. Porque el txakoli no se entiende sin la mesa, y la mesa vasca no se entiende sin el txakoli.
+      </p>
+
+      <h3>Para quién es esta visita</h3>
+
+      <p>
+        Para quien ya conoce el txakoli y quiere entenderlo mejor. Para quien empieza a interesarse por la <strong>gastronomía vasca de calidad</strong> y quiere ir más allá del restaurante. Para los que buscan <strong>planes culturales en el País Vasco</strong> que merezcan la pena el sábado por la tarde. Y también para quien simplemente quiere pasar un buen rato aprendiendo algo real en un espacio bien cuidado.
+      </p>
+
+      <div class="info-aside">
+        <div class="info-aside-label">Información práctica</div>
+        <div class="info-row">
+          <span class="info-key">Dónde</span>
+          <span class="info-val">Bizkaia — <a href="https://euskadigastronomika.eus/es/museo-del-txakoli-txakolingunea" target="_blank" rel="noopener">Consultar ubicación exacta</a></span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Tipo</span>
+          <span class="info-val">Centro de interpretación con visita guiada y maridaje</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Duración</span>
+          <span class="info-val">Aprox. 2 horas con degustación incluida</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Recomendado</span>
+          <span class="info-val">Parejas, grupos reducidos, amantes de la gastronomía vasca</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Reserva</span>
+          <span class="info-val">Recomendada con antelación, especialmente en fin de semana</span>
+        </div>
+      </div>
+
+      <h2>Por qué lo recomendamos</h2>
+
+      <p>
+        En SustraiApp seleccionamos espacios que ofrecen algo que las plataformas masivas no saben capturar: contexto, criterio y autenticidad. Txakolin Museoa cumple los tres. No es un atractivo turístico genérico. Es un espacio creado por y para quienes entienden que la gastronomía vasca tiene raíces que merecen conocerse.
+      </p>
+
+      <p>
+        Si estás planificando tu <strong>agenda gastronómica para este fin de semana</strong> o buscando algo que hacer en Euskadi más allá de los circuitos habituales, este es el tipo de plan que te pedirán que cuentes cuando llegues a casa.
+      </p>
+
+      <div class="article-cta-primary">
+        <div class="article-cta-primary-text">
+          <h3>Visita <em>Txakolin Museoa</em></h3>
+          <p>Consulta horarios, precios y cómo llegar directamente en su web oficial. La reserva anticipada es la única forma de garantizar plaza.</p>
+        </div>
+        <a href="https://euskadigastronomika.eus/es/museo-del-txakoli-txakolingunea" target="_blank" rel="noopener sponsored" class="btn-cta-sage">Ir al sitio oficial →</a>
+      </div>
+
+      <div class="article-cta-secondary">
+        <div class="article-cta-secondary-text">
+          <h3>¿Tienes un espacio gastronómico o cultural en Euskadi?</h3>
+          <p>Si tu propuesta tiene el criterio que busca nuestro público, tiene un lugar en SustraiApp. Evaluación gratuita, sin compromiso.</p>
+        </div>
+        <a href="landing.html#formulario" class="btn-cta-outline">Solicitar evaluación →</a>
+      </div>
+
+      <div class="article-footer-meta">
+        <div class="tags-wrap">
+          <span class="tag">Agenda gastronómica</span>
+          <span class="tag">Planes fin de semana País Vasco</span>
+          <span class="tag">Txakoli</span>
+          <span class="tag">Cultura vasca</span>
+          <span class="tag">Bizkaia</span>
+          <span class="tag">Descubrir País Vasco</span>
+        </div>
+        <span class="share-label">Compartir artículo</span>
+      </div>
+
+    </div><!-- /article-body -->
+
+    <div class="more-articles">
+      <div class="more-inner">
+        <p class="section-label">Seguir leyendo</p>
+        <div class="more-grid">
+          <div class="more-card" onclick="openArticle('katutxiki')">
+            <span class="more-card-tag">Bar de pintxos · Bilbao</span>
+            <h3>Katu Txiki: alta cocina de barrio en la calle <em>San Francisco</em></h3>
+          </div>
+          <div class="more-card">
+            <span class="more-card-tag">Próximamente</span>
+            <h3>Guía de asadores tradicionales vascos para <em>este otoño</em></h3>
+          </div>
+          <div class="more-card">
+            <span class="more-card-tag">Próximamente</span>
+            <h3>Tiendas delicatessen en Bilbao que <em>merece la pena conocer</em></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+</div><!-- /view-txakoli -->
+
+
+<!-- ═══════════════════════════════════════════════════
+     ARTÍCULO 2: KATU TXIKI
+════════════════════════════════════════════════════ -->
+<div id="view-katutxiki" class="article-wrap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Katu Txiki: alta cocina de barrio en la calle San Francisco de Bilbao",
+  "description": "Raúl Terrés y Andoni Goyenechea, formados en la alta cocina, han abierto un bar de pintxos en el barrio de San Francisco. Croquetas, carrilleras, steak tartar y una filosofía de producto local que merece la pena conocer.",
+  "keywords": "pintxos de calidad Bilbao, restaurante producto local, mejores restaurantes Casco Viejo, donde comer bien Bilbao, cocina de autor, bar pintxos Bilbao",
+  "datePublished": "2026-05-30",
+  "dateModified": "2026-05-30",
+  "author": {
+    "@type": "Organization",
+    "name": "SustraiApp",
+    "url": "https://sustraiapp.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SustraiApp",
+    "logo": { "@type": "ImageObject", "url": "https://sustraiapp.com/logo.svg" }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sustraiapp.com/blog/katu-txiki-pintxos-bilbao"
+  },
+  "about": {
+    "@type": "Restaurant",
+    "name": "Bar Katu Txiki",
+    "description": "Bar de pintxos de alta cocina en el barrio de San Francisco, Bilbao",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle San Francisco, 10",
+      "addressLocality": "Bilbao",
+      "addressRegion": "Bizkaia",
+      "addressCountry": "ES"
+    },
+    "servesCuisine": "Cocina vasca contemporánea",
+    "priceRange": "€€"
+  },
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "SustraiApp Blog",
+    "url": "https://sustraiapp.com/blog/"
+  }
+}
+</script>
+
+  <article>
+
+    <header class="article-hero article-hero--navy">
+      <div class="article-hero-glow"></div>
+      <div class="article-hero-inner">
+        <p class="article-category">Bar de pintxos · Pintxos de calidad Bilbao</p>
+        <h1>Katu Txiki:<br>alta cocina de barrio<br>en la calle <em>San Francisco</em></h1>
+        <p class="article-hero-sub">Raúl Terrés y Andoni Goyenechea formaron sus manos en la alta cocina. Luego decidieron aplicar todo ese aprendizaje a un bar de pintxos de barrio. El resultado es uno de los sitios más interesantes que han abierto en Bilbao en lo que va de año.</p>
+        <div class="article-byline">
+          <span>SustraiApp Editorial</span>
+          <span class="byline-sep"></span>
+          <span>30 de mayo, 2026</span>
+          <span class="byline-sep"></span>
+          <span>7 min de lectura</span>
+          <span class="byline-sep"></span>
+          <span class="sponsored-badge">Contenido patrocinado</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="back-nav back-nav--top">
+      <button class="back-btn" onclick="closeArticle()">← Volver al blog</button>
+    </div>
+
+    <div class="article-body">
+
+      <p class="article-intro-accent">
+        Hay una generación de cocineros en Bilbao que decidió algo arriesgado: salir de los restaurantes donde habían aprendido a cocinar bien y abrir algo mucho más pequeño, más de barrio, más honesto. Katu Txiki es uno de esos sitios. Y ya se nota.
+      </p>
+
+      <p>
+        Si buscas <strong>dónde comer bien en Bilbao</strong> sin pagar precio de menú de degustación, este bar de pintxos en la calle San Francisco tiene todo lo que eso significa: producto local, técnica real y el tipo de ambiente que hace que la gente repita. Lo que El Correo ya describió en su sección gastronómica <em>Jantour</em> como "la taberna de moda que vale la pena levantar la persiana".
+      </p>
+
+      <h2>La filosofía detrás del mostrador</h2>
+
+      <p>
+        Raúl Terrés y <a href="https://www.instagram.com/bar.katutxiki/" target="_blank" rel="noopener">Andoni Goyenechea</a> forman parte de esa generación de cocineros formados en la alta cocina que han decidido aplicar todo ese aprendizaje a un formato completamente diferente: el bar de barrio. No como un paso atrás. Como una elección.
+      </p>
+
+      <p>
+        La filosofía de Katu Txiki es reconocible y directa: <strong>pintxos elaborados al momento</strong>, cocina de producto de cercanía y platos que tienen historia. Sin artificios innecesarios. Sin carta inflada. Con el tipo de honestidad que solo es posible cuando quien cocina sabe exactamente qué está haciendo y por qué.
+      </p>
+
+      <div class="pull-quote">
+        <p>"Un bar de pintxos pensado para comer bien, sin perder el vínculo con el barrio."</p>
+      </div>
+
+      <h2>Qué comer en Katu Txiki</h2>
+
+      <p>
+        La carta rota según temporada y disponibilidad de producto, que es exactamente como tiene que ser en un sitio así. Lo que se ha convertido en referencia son sus <strong>croquetas</strong> —trabajadas con la precisión técnica que solo da el paso por cocinas de nivel—, las <strong>carrilleras</strong>, el <strong>steak tartar</strong> y el plato que mejor resume su propuesta: <strong>oreja de cerdo con miel y almendras</strong>. Un clásico de casquería reinterpretado con criterio y sin miedo.
+      </p>
+
+      <div class="data-block">
+        <div class="data-item">
+          <span class="data-num">2</span>
+          <div class="data-desc">Cocineros formados en alta cocina detrás del mostrador</div>
+        </div>
+        <div class="data-item">
+          <span class="data-num">€€</span>
+          <div class="data-desc">Precio medio. Alta cocina a precio de bar de barrio</div>
+        </div>
+        <div class="data-item">
+          <span class="data-num">2026</span>
+          <div class="data-desc">Año de apertura. Uno de los sitios más frescos del momento</div>
+        </div>
+      </div>
+
+      <h3>El producto, siempre de cercanía</h3>
+
+      <p>
+        Rape curado, tortilla trabajada, steak tartar con criterio. No hay nada en la carta que no tenga sentido. Y ese es el sello: no intentan impresionar con técnicas espectaculares sino con ingredientes elegidos bien y cocinados con cuidado. Es lo que significa <strong>restaurante de producto local</strong> cuando la expresión no es marketing sino una elección real.
+      </p>
+
+      <h2>Por qué este bar importa más allá del barrio</h2>
+
+      <p>
+        San Francisco es un barrio en transformación. Y lo que hacen Raúl y Andoni importa porque demuestra que la gastronomía de calidad no necesita una dirección cara ni un interiorismo de revista. Necesita criterio, producto y ganas de hacerlo bien. Katu Txiki es un argumento sólido a favor de esa tesis.
+      </p>
+
+      <p>
+        Si buscas <strong>pintxos de calidad en Bilbao</strong> que estén a la altura de lo que prometen, ponlo en tu lista. Y si tienes costumbre de explorar más allá del Casco Viejo, este es el tipo de descubrimiento que luego cuentas.
+      </p>
+
+      <div class="info-aside">
+        <div class="info-aside-label">Información práctica</div>
+        <div class="info-row">
+          <span class="info-key">Dónde</span>
+          <span class="info-val">Calle San Francisco, 10 · Bilbao (Bizkaia)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Tipo</span>
+          <span class="info-val">Bar de pintxos · Cocina vasca contemporánea</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Precio</span>
+          <span class="info-val">€€ · Precio de bar, calidad de restaurante</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Recomendado</span>
+          <span class="info-val">Amantes de la cocina vasca honesta, exploradores del barrio</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Seguir</span>
+          <span class="info-val"><a href="https://www.instagram.com/bar.katutxiki/" target="_blank" rel="noopener">@bar.katutxiki en Instagram</a></span>
+        </div>
+      </div>
+
+      <div class="article-cta-primary">
+        <div class="article-cta-primary-text">
+          <h3>Descubre <em>Katu Txiki</em></h3>
+          <p>Síguelos en Instagram para conocer la carta del día, los pintxos de temporada y cuándo volver a pasarte.</p>
+        </div>
+        <a href="https://www.instagram.com/bar.katutxiki/" target="_blank" rel="noopener sponsored" class="btn-cta-sage">Ver en Instagram →</a>
+      </div>
+
+      <div class="article-cta-secondary">
+        <div class="article-cta-secondary-text">
+          <h3>¿Tu restaurante o bar de pintxos tiene este criterio?</h3>
+          <p>Si ofreces calidad real y quieres llegar a quien la aprecia, hay una evaluación gratuita esperándote. Sin cuotas de acceso. Sin compromiso hasta que decidamos juntos.</p>
+        </div>
+        <a href="landing.html#formulario" class="btn-cta-outline">Solicitar evaluación →</a>
+      </div>
+
+      <div class="article-footer-meta">
+        <div class="tags-wrap">
+          <span class="tag">Pintxos de calidad</span>
+          <span class="tag">Donde comer bien Bilbao</span>
+          <span class="tag">Cocina de autor</span>
+          <span class="tag">Restaurante producto local</span>
+          <span class="tag">Descubrir Bilbao como local</span>
+          <span class="tag">Bar pintxos Bilbao</span>
+        </div>
+        <span class="share-label">Compartir artículo</span>
+      </div>
+
+    </div><!-- /article-body -->
+
+    <div class="more-articles">
+      <div class="more-inner">
+        <p class="section-label">Seguir leyendo</p>
+        <div class="more-grid">
+          <div class="more-card" onclick="openArticle('txakoli')">
+            <span class="more-card-tag">Cultura gastronómica · Bizkaia</span>
+            <h3>Txakolin Museoa: el vino vasco con <em>todos los sentidos</em></h3>
+          </div>
+          <div class="more-card">
+            <span class="more-card-tag">Próximamente</span>
+            <h3>Guía de asadores tradicionales vascos para <em>este otoño</em></h3>
+          </div>
+          <div class="more-card">
+            <span class="more-card-tag">Próximamente</span>
+            <h3>Tiendas delicatessen en Bilbao: <em>productos artesanos vascos</em></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+</div><!-- /view-katutxiki -->
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="logo.svg" alt="SustraiApp" class="footer-logo">
+      <p class="footer-desc">Guía gastronómica y de ocio de calidad del País Vasco. Conectamos negocios locales con clientes que valoran la excelencia.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Blog</h4>
+        <a href="blog.html">Artículos</a>
+        <a href="#">Categorías</a>
+      </div>
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <a href="landing.html#como-funciona">Cómo funciona</a>
+        <a href="landing.html#formulario">Solicitar plaza</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <p>&copy; 2026 SustraiApp — Todos los derechos reservados</p>
+    <a href="#">Aviso legal</a>
+  </div>
+</footer>
+
+<script src="js/blog.js"></script>
+
+</body>
+</html>
